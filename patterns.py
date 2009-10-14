@@ -8,7 +8,7 @@ replacements = [
 (1.0, "men ","smurfs "),
 (1.0, "man ","smurf "),
 (1.0, "was ", "was smurfily "),
-(1.0, "a ", "a smurfy "),
+(1.0, " a ", " a smurfy "),
 (1.0, " is "," is smurfily "),
 (1.0, "link","smurf"),
 (1.0, "are ","are smurfily "),
@@ -27,4 +27,7 @@ replacements = [
 (1.0, "Terror","Smurf"),
 (1.0, "small ","smurfy "),
 (1.0, " child"," Baby Smurf"),
+(1.0, " Child"," Baby Smurf"),
+(1.0, " baby"," Baby Smurf"),
+(1.0, " Baby"," Baby Smurf"),
 ]
