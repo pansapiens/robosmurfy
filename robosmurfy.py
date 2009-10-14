@@ -1,29 +1,14 @@
 # A Google Wave Robot, inspired the WebSmurfer (http://websmurfer.devnull.net/).
 #
+import re, random
+
 from waveapi import events
 from waveapi import model
 from waveapi import robot
 
-__author__ = 'ajperry@pansapiens.com (Andrew Perry)'
+from patterns import replacements
 
-match_dict = {
-"new ": "smurfy new ",
-"woman": "smurfette",
-"women":"smurfettes",
-"men":"smurfs",
-"man":"smurf",
-"was ": "was smurfily ",
-"a ": "a smurfy ",
-"is ":"is smurfily ",
-"link":"smurf",
-"are ":"are smurfily ",
-"be ":"be smurfy ",
-"Government":"Gargamel",
-"trafficking ":"trafficking smurf ",
-"who ":"who the smurf ",
-" Police ":" Azrael ",
-"house":"mushroom",
-}
+__author__ = 'ajperry@pansapiens.com (Andrew Perry)'
 
 def OnParticipantsChanged(properties, context):
   """Invoked when any participants have been added/removed."""
@@ -43,9 +28,13 @@ def Notify(context):
 def OnBlipSubmitted(properties, context):
   blip = context.GetBlipById(properties['blipId'])
   contents = blip.GetDocument().GetText()
-  for word in match_dict:
-    contents = contents.replace(word, match_dict[word])
-    blip.GetDocument().SetText(contents)
+  for subst in replacements:
+    prob = subst[0]
+    match = subst[1]
+    replace_with = subst[2]
+    if prob > random.random():
+      contents = contents.replace(match, replace_with)
+      blip.GetDocument().SetText(contents)
 
 if __name__ == '__main__':
   myRobot = robot.Robot('robosmurfy', 
