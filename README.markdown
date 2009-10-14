@@ -1,7 +1,7 @@
 Robosmurfy - A little blue Google Wave Robot
 ============================================
 
-Inspired by the WebSmurfer: http://websmurfer.devnull.net/
+Inspired by the <a href="http://websmurfer.devnull.net/">WebSmurfer</a>.
 
 Just add robosmurfy@appspot.com to your Wave. Smurfy !
 
