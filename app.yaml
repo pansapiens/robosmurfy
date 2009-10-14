@@ -1,0 +1,11 @@
+application: robosmurfy
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /_wave/.*
+  script: robosmurfy.py
+- url: /static
+  static_dir: static
+
