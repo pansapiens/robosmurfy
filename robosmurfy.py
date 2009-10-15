@@ -6,7 +6,7 @@ from waveapi import events
 from waveapi import model
 from waveapi import robot
 
-from patterns import replacements
+from patterns import replacements, doubles
 
 __author__ = 'ajperry@pansapiens.com (Andrew Perry)'
 
@@ -35,6 +35,13 @@ def OnBlipSubmitted(properties, context):
     if prob > random.random():
       contents = contents.replace(match, replace_with)
       blip.GetDocument().SetText(contents)
+
+  # cleanup and double-smurfy's
+  for doub in doubles:
+    match = doub[1]
+    replace_with = doub[2]
+    contents = contents.replace(match, replace_with)
+    blip.GetDocument().SetText(contents)
 
 if __name__ == '__main__':
   myRobot = robot.Robot('robosmurfy', 

@@ -31,3 +31,13 @@ replacements = [
 (1.0, " baby"," Baby Smurf"),
 (1.0, " Baby"," Baby Smurf"),
 ]
+
+# HACK, till we do this properly
+# will remove duplicate smurfy and smurfily's
+doubles = [
+(1.0, "smurfy smurfy","smurfy"),
+(1.0, "smurfily smurfily","smurfily"),
+(1.0, "smurfy new smurfy new", "smurfy new"),
+(1.0, "the smurf the smurf", "the smurf"),
+]
+
