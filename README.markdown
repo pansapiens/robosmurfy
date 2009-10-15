@@ -11,4 +11,6 @@ TODO:
 
 <del>* Prevent double substitution, eg: "This is some excellent prose" => "This smurfily is smurfily some excellent prose" => "This smurfily smurfily is smurfily smurfily some excellent prose".</del>
 
+* Add "Smurftastic!" and "Smurfilicious!" after some sentences (analysis of the original WebSmurfer required to determine exactly where. "Smurftastic!" seems to appear after '' quotes).
+
 * Further analyse output of the WebSmurfer to match subsititutions and behaviour more closely.

@@ -12,7 +12,7 @@ replacements = [
 (1.0, " is "," is smurfily "),
 (1.0, "link","smurf"),
 (1.0, "are ","are smurfily "),
-(1.0, "be ","be smurfy "),
+(0.5, "be ","be smurfily "),
 (1.0, "my ","my smurfy "),
 (1.0, "Government ","Gargamel "),
 (1.0, "government","gargamel"),
