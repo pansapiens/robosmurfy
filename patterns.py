@@ -8,11 +8,12 @@ replacements = [
 (1.0, "men ","smurfs "),
 (1.0, "man ","smurf "),
 (1.0, "was ", "was smurfily "),
-(1.0, " a ", " a smurfy "),
+(0.5, " a ", " a smurfy "),
 (1.0, " is "," is smurfily "),
 (1.0, "link","smurf"),
 (1.0, "are ","are smurfily "),
 (1.0, "be ","be smurfy "),
+(1.0, "my ","my smurfy "),
 (1.0, "Government ","Gargamel "),
 (1.0, "government","gargamel"),
 (1.0, "trafficking ","trafficking smurf "),
@@ -39,5 +40,9 @@ doubles = [
 (1.0, "smurfily smurfily","smurfily"),
 (1.0, "smurfy new smurfy new", "smurfy new"),
 (1.0, "the smurf the smurf", "the smurf"),
+(1.0, "Smurf Smurf", "Smurf"),
+(1.0, "smurf smurf", "smurf"),
+(1.0, "Smurf Smurf Smurf", "Smurf"),
+(1.0, "smurf smurf smurf", "smurf"),
 ]
 
