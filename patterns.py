@@ -16,14 +16,17 @@ replacements = [
 (1.0, " my ","my smurfy "),
 (1.0, "Government ","Gargamel "),
 (1.0, "government","gargamel"),
-(1.0, "trafficking ","trafficking smurf "),
 (1.0, " who ","who the smurf "),
 (1.0, "Police ","Azrael "),
 (1.0, "police ","Azrael "),
 (1.0, "house ","mushroom "),
 (1.0, "House ","Mushroom "),
-(1.0, "home ","mushroom "),
+(1.0, "houses ","mushrooms "),
+(1.0, "Houses ","Mushrooms "),
+(1.0, "home","mushroom "),
 (1.0, "Home ","Mushroom "),
+(1.0, "homes ","mushrooms "),
+(1.0, "Homes ","Mushrooms "),
 (1.0, "terror","Smurf"),
 (1.0, "Terror","Smurf"),
 (1.0, "small ","smurfy "),
@@ -31,6 +34,8 @@ replacements = [
 (1.0, " Child"," Baby Smurf"),
 (1.0, " baby"," Baby Smurf"),
 (1.0, " Baby"," Baby Smurf"),
+(1.0, " babies"," Baby Smurfs"),
+(1.0, " Babies"," Baby Smurfs"),
 ]
 
 # HACK, till we do this properly
