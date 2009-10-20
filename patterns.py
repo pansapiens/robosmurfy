@@ -18,7 +18,6 @@ replacements = [
 (1.0, "government","gargamel"),
 (1.0, "Microsoft","Gargamel"),
 (1.0, "microsoft","gargamel"),
-(1.0, " who ","who the smurf "),
 (1.0, "king","king smurf"),
 (1.0, "King","King smurf"),
 (1.0, "Police ","Azrael "),
