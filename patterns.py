@@ -7,7 +7,7 @@ replacements = [
 (1.0, "women ","smurfettes "),
 (1.0, "men ","smurfs "),
 (1.0, "man ","smurf "),
-(1.0, " was ", "was smurfily "),
+(1.0, " was ", " was smurfily "),
 (0.5, " a ", " a smurfy "),
 (1.0, " is "," is smurfily "),
 (1.0, "link","smurf"),
