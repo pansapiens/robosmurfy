@@ -28,20 +28,28 @@ def Notify(context):
 def OnBlipSubmitted(properties, context):
   blip = context.GetBlipById(properties['blipId'])
   contents = blip.GetDocument().GetText()
-  for subst in replacements:
-    prob = subst[0]
-    match = subst[1]
-    replace_with = subst[2]
-    if prob > random.random():
-      contents = contents.replace(match, replace_with)
-      blip.GetDocument().SetText(contents)
 
-  # cleanup and double-smurfy's
-  for doub in doubles:
-    match = doub[1]
-    replace_with = doub[2]
-    contents = contents.replace(match, replace_with)
-    blip.GetDocument().SetText(contents)
+  try: # we try, so just in case this fails somehow cleanup will still be called
+    # initial substitutions
+    for subst in replacements:
+      prob = subst[0]
+      match = subst[1]
+      replace_with = subst[2]
+      if prob > random.random():
+        contents = contents.replace(match, replace_with)
+  except:
+    pass
+
+  try:
+    # cleanup and double-smurfy's
+    for doub in doubles:
+      match = doub[0]
+      replace_with = doub[1]
+      contents = contents.replace(match, replace_with)
+  except:
+    pass
+  
+  blip.GetDocument().SetText(contents)
 
 if __name__ == '__main__':
   myRobot = robot.Robot('robosmurfy', 

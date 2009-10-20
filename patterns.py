@@ -2,7 +2,7 @@
 # probability, match, replace
 
 replacements = [
-(1.0, " new ", "smurfy new "),
+(1.0, " new ", " smurfy new "),
 (1.0, "woman ", "smurfette "),
 (1.0, "women ","smurfettes "),
 (1.0, "men ","smurfs "),
@@ -11,9 +11,9 @@ replacements = [
 (0.5, " a ", " a smurfy "),
 (1.0, " is "," is smurfily "),
 (1.0, "link","smurf"),
-(1.0, " are ","are smurfily "),
-(0.5, " be ","be smurfily "),
-(1.0, " my ","my smurfy "),
+(1.0, " are "," are smurfily "),
+(0.5, " be "," be smurfily "),
+(1.0, " my "," my smurfy "),
 (1.0, "Government ","Gargamel "),
 (1.0, "government","gargamel"),
 (1.0, "Microsoft","Gargamel"),
@@ -58,8 +58,8 @@ replacements = [
 (1.0, "Democracy", "Smurfocracy"),
 (1.0, "enforcement", "ensmurfment"),
 (1.0, "Enforcement", "Ensmurfment"),
-(1.0, "entertainment" "smurftainment"),
-(1.0, "Entertainment" "Smurftainment"),
+(1.0, "entertainment", "smurftainment"),
+(1.0, "Entertainment", "Smurftainment"),
 ]
 # up to "i" in dictionary comparison
 
@@ -67,13 +67,13 @@ replacements = [
 # HACK, till we do this properly
 # will remove duplicate smurfy and smurfily's
 doubles = [
-(1.0, "smurfy smurfy","smurfy"),
-(1.0, "smurfily smurfily","smurfily"),
-(1.0, "smurfy new smurfy new", "smurfy new"),
-(1.0, "the smurf the smurf", "the smurf"),
-(1.0, "Smurf Smurf", "Smurf"),
-(1.0, "smurf smurf", "smurf"),
-(1.0, "Smurf Smurf Smurf", "Smurf"),
-(1.0, "smurf smurf smurf", "smurf"),
+("smurfy smurfy","smurfy"),
+("smurfily smurfily","smurfily"),
+("smurfy new smurfy new", "smurfy new"),
+("the smurf the smurf", "the smurf"),
+("Smurf Smurf", "Smurf"),
+("smurf smurf", "smurf"),
+("Smurf Smurf Smurf", "Smurf"),
+("smurf smurf smurf", "smurf"),
 ]
 
