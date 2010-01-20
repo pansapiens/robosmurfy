@@ -15,4 +15,6 @@ TODO:
 
 * Add "Smurftastic!" and "Smurfilicious!" after some sentences (analysis of the original WebSmurfer required to determine exactly where. "Smurftastic!" seems to appear after '' quotes).
 
+* Take a look at <a href="http://wave-samples-gallery.appspot.com/about_app?app_id=18014">Piratify</a>, a Wave Robot with similar functionality, but speaks pirate. See if it solves the 'loss of formatting bug'.
+
 <del>* Further analyse output of the WebSmurfer to match subsititutions and behaviour more closely (eg, words.txt dictionary vs. smurf_words.txt, the which is words.txt passed through the original Websmurfer).</del>
